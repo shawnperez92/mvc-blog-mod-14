@@ -1,0 +1,23 @@
+<div class="header-container">
+    <section>
+        <h1>The Tech Spot</h1>
+    </section>
+
+    <section class="navbar-container">
+        <nav>        
+            <ul>
+                <li>
+                    {{#if isLoggedIn}}
+                        <a href="/homepage">Home</a>
+                    {{else}}
+                        <a href="/login">Home</a>
+                    {{/if}}
+                </li>
+                <li><a href="/api/blogs">Blogs</a></li>
+                <li><a href="/api/users/profile/{{user_id}}">Profile</a></li>
+                <li><a href="#" id="logout-link">Log Out</a></li>
+            </ul>
+        </nav>
+    </section>
+    <script src="../../public/js/logout.js"></script>
+</div>
